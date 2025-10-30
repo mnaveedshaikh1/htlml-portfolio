@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebTechnologiesHandout</title>
+    <style>
+    body { 
+        font-family: Arial, sans-serif; 
+        margin: 40px; 
+        line-height: 1.6;
+        background-color:antiquewhite;
+    }
+        
+    #center{text-align: center;}
+
+    .container{
+        display: flex;
+        gap: 3px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 5px green;
+        height: 70vh;
+    }
+    .mcontainer{display: none;}
+     .mitem{display: none;}
+     .item{
+        text-decoration: none;
+        color:darkblue;
+        background-color: lightblue;
+     }
+     
+     .lab6{
+        align-self: flex-end;
+     }
+     h1 { 
+        color: navy; 
+        text-align: center; 
+    }
+    h2, h3 { 
+        color: darkslategray; 
+        text-align: center; 
+    }
+    ol li { 
+        margin: 8px 0; 
+    }
+    
+     @media(max-width:768px){
+        body { 
+        font-family: 'Times New Roman', serif; 
+        margin: 20px; 
+        line-height: 0.8;
+        background-color:aqua;
+        }
+       
+        .container{
+        display: none;
+        }
+        .item{
+            display:none;
+        }
+        .mcontainer{
+            display: flex;
+            gap: 3px;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            border: solid 5px green;
+            height: 70vh;
+        }
+        .mitem{
+            display: list-item;
+            text-decoration: none;
+            color:darkblue;
+            background-color: lightblue;
+        }
+        .mlab6{
+            align-self: center;
+        }
+     }
+    
+
+</style>
+
+</head>
+<body>
+   <h1>Web Technologies Handout</h1>
+<h2>Course: CSS-336 (2+1)</h2>
+<p id="center">Semester: Fall 2025</p>
+<h3>Name: _________ | Registration ID: __________</h3>
+
+    <p>Following are the list of experiments:</p>
+    <ol class="container">
+        <li class="item lab1"><a href="./lab1_images.html">Experiment 1: Introduction to HTML Basics</a></li>
+        <li class="item lab2">Experiment 2: Creating and Publishing an Online Lab Manual </li>
+        <li class="item lab3">Experiment 3: Working with Tables, Lists, Images, and Hyperlinks</li>
+        <li class="item lab4">Experiment 4: Applying CSS to HTML (Inline, Internal, and External Styles)</li>
+        <li class="item lab5">Experiment 5: Exploring CSS Selectors</li>
+        <li class="item lab6">Experiment 6: Web Responsiveness</li>
+    </ol>
+     <ol class="mcontainer">
+        <li class="mitem mlab1"><a href="./lab1_images.html">Lab1</a></li>
+        <li class="mitem mlab2">Lab2</li>
+        <li class="mitem mlab3">Lab3</li>
+        <li class="mitem mlab4">Lab4</li>
+        <li class="mitem mlab5">Lab5</li>
+        <li class="mitem mlab6">Lab6</li>
+    </ol>
+</body>
+</html>

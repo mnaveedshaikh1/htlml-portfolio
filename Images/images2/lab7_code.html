@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Fundamentals: Console Web Interactivity</h1>
+
+    <p>Following are Mandatory tasks:</p>
+    <h2>Task1: Click on following button</h2>
+    <button onclick="task1()"> Task1: Show Name and Registration ID</button>
+    <h2>Task2: Enter ther following numbers and then click the button.</h2>
+    Enter 1st number:<input type="text" id="num1"> <br>
+    Enter 2nd number:<input type="text" id="num2"><br> <br>
+    <button onclick="task2()">Task2: Arithmetic and Comparison Operations</button>
+    <p id="task2Output"></p>
+    <script>
+        function task1() {
+            var name =prompt("Enter your name");
+            var regId=prompt("Enter your Reg ID");
+            //var city=prompt("Enter your City details");
+            alert("Your Name is "+name+" and your registration ID is "+regId); 
+        }
+        function task2() {
+            var num1=parseFloat(document.getElementById("num1").value);
+            var num2=parseFloat(document.getElementById("num2").value);
+
+            var sum = num1 + num2;
+            var diff = num1 - num2;
+            var product = num1 * num2;
+            var division = num1 / num2;
+            var greater = (num1 > num2);
+
+            document.getElementById("task2Output").innerHTML=
+            "Sum: " + sum + "<br>" +
+            "Difference: " + diff + "<br>" +
+            "Product: " + product + "<br>" +
+            "Division: " + division + "<br>" +
+            "Is first number greater? " + greater;
+        }
+    </script>
+</body>
+</html>
