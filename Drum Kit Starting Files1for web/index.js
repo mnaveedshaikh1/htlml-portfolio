@@ -9,7 +9,7 @@ document.querySelectorAll(".drum")[i].addEventListener("click",function (){
    
    var buttonClicked =this.innerHTML;
    makeSound(buttonClicked);
-  
+   buttonAnimate(buttonClicked);
 });
 }
 
@@ -50,6 +50,13 @@ function makeSound(sound) {
 }
 
       
-  
+function buttonAnimate(button) {
+document.querySelector("."+button).classList.add("pressed");
+setInterval(() => {
+document.querySelector("."+button).classList.remove("pressed");     
+},100);
+
+
+}  
 
 
