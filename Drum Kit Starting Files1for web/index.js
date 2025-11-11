@@ -1,5 +1,6 @@
 document.addEventListener("keydown", function(event) {
  makeSound(event.key);
+ buttonAnimate(event.key);
 })
 
 var numDrumButtons =document.querySelectorAll(".drum").length;
